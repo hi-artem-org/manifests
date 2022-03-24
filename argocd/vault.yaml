@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: vault
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+  annotations:
+    argocd.argoproj.io/sync-wave: "9"
+    virtru.updater.io/repo-path: htttps:/github.com
+    virtru.updater.io/pull_request: 'true'
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: vault
+  project: default
+  source:
+    repoURL: 'https://helm.releases.hashicorp.com'
+    targetRevision: 0.19.0
+    helm:
+      chart: vault
