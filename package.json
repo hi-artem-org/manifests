@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/hi-artem-org/manifests#readme",
   "dependencies": {
-    "express": "4.10"
+    "express": "4.17"
   }
 }
