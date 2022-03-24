@@ -3,6 +3,6 @@
     "config:base"
   ],
   "argocd": {
-    "fileMatch": ["argocd/.+\\.yaml$"]
+    "fileMatch": ["\\.yaml$"]
   }
 }
