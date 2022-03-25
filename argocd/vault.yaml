@@ -16,6 +16,5 @@ spec:
   project: default
   source:
     repoURL: 'https://helm.releases.hashicorp.com'
-    targetRevision: 0.15.0
-    helm:
-      chart: vault
+    targetRevision: 0.15.0      
+    chart: vault
